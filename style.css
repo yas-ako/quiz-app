@@ -1,0 +1,58 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #2a3c8c;
+    font-size: xx-large;
+}
+
+main {
+    text-align: center;
+    margin: 25px;
+}
+
+.box {
+    border: solid;
+    border-width: 8px;
+    border-color: #2a3c8c;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.box>* {
+    /* margin: auto; */
+    /* padding: auto; */
+    margin: 0;
+}
+
+.quiz__box {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-areas:
+        "title      rate      "
+        "question   question  "
+        "showAnswer showAnswer";
+}
+
+.subheading {
+    font-size: x-large;
+}
+
+.quiz__rate {
+    color: #2a3c8c;
+    height: 100%;
+}
+
+.quiz__answer-button {
+    padding: 10px;
+    border: solid 1px;
+    border-color: #2a3c8c;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div>アプリ</div>
+    </header class="header">
+    <main>
+        <div id="home" class="box">
+            <div class="subheading home__subheading">あいうお</div>
+        </div>
+        <div id="quiz" class="box quiz__box">
+            <div class="subheading quiz__subheading" style="grid-area: title; background-color: #2a3c8c7b;">
+                <p>問題<span>6</span></p>
+            </div>
+            <div class="quiz__rate" style="grid-area: rate;">
+                <p>正答率<span>66</span>%</p>
+            </div>
+            <div style="grid-area: question;">
+                <p>土佐日記の属するジャンルは何か。</p>
+            </div>
+            <div style="grid-area: showAnswer;">
+                <button class="quiz__answer-button">
+                    <p>答えを見る</p>
+                </button>
+            </div>
+        </div>
+
+        <div id="result" class="box">
+            <div class="subheading result__subheading">あいうお</div>
+        </div>
+
+    </main>
+</body>
+
+</html>
