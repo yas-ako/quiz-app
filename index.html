@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>クイズ</title>
+    <title>クイズアプリ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Oswald:wght@500&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon">
+
 </head>
 
 <body>
@@ -22,20 +29,26 @@
         <div id="home" class="box">
             <div class="subheading home__subheading">あいうお</div>
         </div>
-        <div id="quiz" class="box quiz__box">
-            <div class="subheading quiz__subheading" style="grid-area: title; background-color: #2a3c8c7b;">
-                <p>問題<span>6</span></p>
+
+        <div id="quiz" class="box">
+            <div class="quiz__qa">
+                <div class="quiz__head">
+                    <div class="subheading">第6問</div>
+                    <div class="q-rate"><span class="q-rate-number">60</span>% (<span id="tried">10</span>回中<span
+                            id="corrected">6</span>回正解)</div>
+                </div>
+                <div class="quiz__body">
+                    <div class="quiz__q-text">質問本文ああああああ。ああああああああああああああああああああああああああああああああああああああああああああ。</div>
+                    <div class="quiz__a">
+                        <div class="quiz__a-text">答えこたえええええええええええええええええええええええええええええええええええええええ</div>
+                        <div class="quiz__a-description">解説はここです。あいうえおえういあいうえお。</div>
+                    </div>
+                </div>
             </div>
-            <div class="quiz__rate" style="grid-area: rate;">
-                <p>正答率<span>66</span>%</p>
-            </div>
-            <div style="grid-area: question;">
-                <p>土佐日記の属するジャンルは何か。</p>
-            </div>
-            <div style="grid-area: showAnswer;">
-                <button class="quiz__answer-button">
-                    <p>答えを見る</p>
-                </button>
+            <div class="quiz__show-answer">答え合わせ</div>
+            <div clas="quiz__check">
+                <div class="quiz__correct">正解</div>
+                <div class="quiz__incorrect">不正解</div>
             </div>
         </div>
 
